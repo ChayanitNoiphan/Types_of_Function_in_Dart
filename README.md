@@ -137,7 +137,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 ## User-defined Functions
 คือ ฟังก์ชันที่ถูกกำหนดโดยผู้ใช้ ผู้ใช้เขียนฟังก์ชันการทำงานของฟังก์ชันตามความต้องการก่อนนำไปใช้ในโปรแกรม
 
-## User-defined functions แบ่งออกเป็นสี่ประเภทเพิ่มเติมตาม Parameter และ Return type:
+### User-defined functions แบ่งออกเป็นสี่ประเภทเพิ่มเติมตาม Parameter และ Return type:
 
   1. No Parameter And No Return Type
   2. Parameter And No Return Type
@@ -272,7 +272,7 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
 
 ## User Defined Functions
 
-## User-defined functions แบ่งออกเป็นสี่ประเภทเพิ่มเติมตาม Parameter และ Return type:
+### User-defined functions แบ่งออกเป็นสี่ประเภทเพิ่มเติมตาม Parameter และ Return type:
 
   1. No Parameter And No Return Type
   2. Parameter And No Return Type
@@ -359,12 +359,101 @@ Funtion คือ block ของ code ที่จะรันเมื่อ�
  
 # Types of Functions in Python
 
+## ฟังก์ชันในภาษา Python แบ่งออกเป็น 2 ประเภท คือ
+
+  1. Standard library functions : เป็นฟังก์ชันในตัว Python ที่พร้อมใช้งาน เช่น sqrt(), pow(), print()
+  2. User Defined Functions : ฟังก์ชันที่เราสามารถสร้างการทำงานตามความต้องการของเราได้
+
+## Standard library functions
+
+### Example:
+	import math
+
+	# sqrt computes the square root
+	square_root = math.sqrt(4)
+
+	print("Square Root of 4 is",square_root)
+
+	# pow() comptes the power
+	power = pow(2, 3)
+
+	print("2 to the power 3 is",power)
+ 
+### Output: 
+	---> Square Root of 4 is 2.0
+	     2 to the power 3 is 8
 
 
 
+## User Defined Functions
 
 
+### User-defined functions แบ่งออกเป็นสี่ประเภทเพิ่มเติมตาม Parameter และ Return type:
 
+  1. No Parameter And No Return Type
+  2. Parameter And No Return Type
+  3. No Parameter And Return Type
+  4. Parameter And Return Type
+
+## Function With No Parameter And No Return Type
+
+### Example:
+	def geet1():
+	    print('\nHello!')
+
+	greet1()
+ 
+### Output: 
+	---> Hello!
+ 
+## Function With Parameter And No Return Type
+
+### Example:
+	def geet2(name):
+	    print('\nHello, {} !'.format(name))
+
+	greet2('Jane')
+	
+### Output: 
+	---> Hello, Jane !
+ 
+## Function With No Parameter And Return Type
+
+### Example:
+	def geet3():
+	    greeting = '\nHello !'
+	    return greeting
+
+	grtng = greet3()
+	print(grtng)
+ 
+### Output: 
+	---> Hello !
+ 
+## Function With Parameter And Return Type
+
+### Example:
+	def geet4(name):
+	    greeting = '\nHello, {}'.format(name)
+	    return greeting
+
+	grtng = greet4('Bob')
+	print(grtng)
+ 
+### Output: 
+	---> Hello, Bob
+
+
+# Video
+
+
+# Reference from
+
+https://www.programiz.com/c-programming/types-user-defined-functions#google_vignette
+https://www.scaler.com/topics/types-of-functions-in-c/
+https://www.dremendo.com/java-programming-tutorial/java-function
+https://www.programiz.com/python-programming/function
+https://web.engr.oregonstate.edu/~webbky/ENGR103_files/Section%206%20User-Defined%20Functions.pdf
 
 
 
